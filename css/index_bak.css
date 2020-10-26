@@ -29,9 +29,9 @@ img {vertical-align: bottom;}
 .titleBar {font-size:90px; color:white; letter-spacing:10px; font-weight:bold;}
 
 /* #pageSection01 		*/
-body:not(.sp) #pageSection01 {background:url(../img/01/bg.jpg) center center no-repeat;}
-body.sp #pageSection01 {background:url(../img/01/sp-bg.png) center center no-repeat; background-size:cover;}
-#pageSection01 {width:100%; height:100vh; background:url(../img/01/bg.jpg) center center no-repeat; background-size:cover; position:relative;}
+body:not(.sp) #pageSection01 {background:url(../img/01/bg.webp) center center no-repeat;}
+body.sp #pageSection01 {background:url(../img/01/sp-bg.jpg) center center no-repeat; background-size:cover;}
+#pageSection01 {width:100%; height:100vh; background:url(../img/01/bg.webp) center center no-repeat; background-size:cover; position:relative;}
 #pageSection01 .contentSection {height:320px; position:absolute; top:0; right:0; bottom:0; left:0; margin:auto auto;}
 #pageSection01 .wis_logo { margin-bottom:12px;}
 #pageSection01 .imgShowSection {margin-bottom:25px;}
