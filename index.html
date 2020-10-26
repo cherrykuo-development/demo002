@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="icon" href="./favicon.ico">
 	<meta charset="utf-8">
-	<title>CherryKuo Demo Page</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<link rel="stylesheet" type="text/css" href="./css/reset200802.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css?v=202010251046">
-	<script src="./js/jquery.min.js"></script>
-	<script src="./js/index.js?v=202010251154"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css?v=202010261408">
+	<title>CherryKuo Demo Page</title>
 
 <!-- Google Analytics -->
 <!-- 
@@ -22,6 +21,23 @@ ga('send', 'pageview');
  -->
 </head>
 <body>
+<script>
+function detectmob() {
+	if ( navigator.userAgent.match(/Android/i)    ||
+			navigator.userAgent.match(/webOS/i)      ||
+			navigator.userAgent.match(/iPhone/i)     ||
+			navigator.userAgent.match(/iPad/i)       ||
+			navigator.userAgent.match(/iPod/i)       ||
+			navigator.userAgent.match(/BlackBerry/i) ||
+			navigator.userAgent.match(/Windows Phone/i)
+	){
+		// window.location.href = './sp/' + window.location.search;
+		document.body.classList.add('sp');
+	}
+}
+detectmob();
+</script>
+
 
 <div class="pageContainer">
 
@@ -617,18 +633,7 @@ ga('send', 'pageview');
 	<!-- .footerSection closing tag -->
 </div>
 
-<script>
-$(function(){
-	'use strict';
-
-	// Google Analytics
-	// $('a[data-event-btn="ga-event"]').click(function(e) {
-	// 	var category = $(this).data('event-category'),
-	// 		action 	   = $(this).data('event-action'),
-	// 		label 	   = $(this).data('event-label');
-	// 	ga('send', 'event', category, action, label);
-	// });
-});
-</script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js?v=202010261410"></script>
 </body>
 </html>
